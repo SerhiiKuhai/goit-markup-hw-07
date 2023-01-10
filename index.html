@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="page-header conteainer">
+			<div class="conteainer page-header">
 				<nav class="nav">
 					<a class="header-link logo link" href="./index.html">
 						<span class="logo-icon">Web</span>
@@ -34,6 +34,11 @@
 						<li><a class="header-link link effect" href="./index.html">Contacts</a></li>
 					</ul>
 				</nav>
+				<button type="button" class="mobile-menu-open" data-menu-open>
+					<svg class="mobile-menu-open-icon" width="32" height="22">
+						<use href="./images/symbol-defs.svg#icon-burger"></use>
+					</svg>
+				</button>
 				<ul class="list contacts">
 					<li>
 						<a class="header-link link effect contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -42,6 +47,63 @@
 						<a class="header-link link effect contacts-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
 					</li>
 				</ul>
+			</div>
+
+			<div class="mobile-menu" data-menu>
+				<div class="conteainer mobile-menu-conteainer">
+					<button class="mobile-menu-close-btn" data-menu-close>
+						<svg class="box-icon" width="8" height="8">
+							<use href="./images/symbol-defs.svg#icon-close-black"></use>
+						</svg>
+					</button>
+					<div>
+						<ul class="list">
+							<li class="header-menu-list"><a class="header-menu link current" href="./index.html">Studio</a></li>
+							<li class="header-menu-list"><a class="header-menu link" href="./portfolio.html">Portfolio</a></li>
+							<li><a class="header-menu link" href="./index.html">Contacts</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul class="list">
+							<li class="header-menu-list">
+								<a class="header-menu link effect" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+							</li>
+							<li class="header-menu-list-mail">
+								<a class="header-menu-mail link effect" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="list employee-link">
+							<li>
+								<a class="link-icon" href="https://www.instagram.com/">
+									<svg class="box-icon" width="16" height="16">
+										<use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="link-icon" href="https://twitter.com/">
+									<svg class="box-icon" width="16" height="16">
+										<use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="link-icon" href="https://www.facebook.com/">
+									<svg class="box-icon" width="16" height="16">
+										<use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="link-icon" href="https://www.linkedin.com/">
+									<svg class="box-icon" width="16" height="16">
+										<use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -57,7 +119,7 @@
 				<div class="conteainer">
 					<h2 class="visually-hidden">direction</h2>
 					<ul class="list features-list">
-						<li>
+						<li class="features-list-box">
 							<div class="box">
 								<svg class="box-icon" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-antenna-1"></use>
@@ -68,7 +130,7 @@
 								Our goal is to identify the business problem to walk away with the perfect and creative solution.
 							</p>
 						</li>
-						<li>
+						<li class="features-list-box">
 							<div class="box">
 								<svg class="box-icon" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-clock-1"></use>
@@ -79,7 +141,7 @@
 								Bring the key message to the brand's audience for the best price within the shortest possible time.
 							</p>
 						</li>
-						<li>
+						<li class="features-list-box">
 							<div class="box">
 								<svg class="box-icon" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-diagram-1"></use>
@@ -90,7 +152,7 @@
 								Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
 							</p>
 						</li>
-						<li>
+						<li class="features-list-box">
 							<div class="box">
 								<svg class="box-icon" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
@@ -110,23 +172,45 @@
 					<h2 class="work-title">What are we doing</h2>
 					<ul class="list work-list">
 						<li>
-							<img src="./images/section2img1.jpg" alt="Monitor screen" width="360" height="300" />
+							<picture>
+								<source srcset="./images/section2img1.webp 1x, ./images/section2img1@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/section2img1@2x.jpg 2x" type="image/jpeg" />
+								<img src="./images/section2img1.jpg" alt="Monitor screen" width="360" height="300" />
+							</picture>
 						</li>
 						<li>
-							<img src="./images/section2img2.jpg" alt="Phone screens" width="360" height="300" />
+							<picture>
+								<source srcset="./images/section2img2.webp 1x, ./images/section2img2@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/section2img2@2x.jpg 2x" type="image/jpeg" />
+								<img src="./images/section2img2.jpg" alt="Phone screens" width="360" height="300" />
+							</picture>
 						</li>
 						<li>
-							<img src="./images/section2img3.jpg" alt="Choice between phone and PC screen" width="360" height="300" />
+							<picture>
+								<source srcset="./images/section2img3.webp 1x, ./images/section2img3@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/section2img3@2x.jpg 2x" type="image/jpeg" />
+								<img
+									src="./images/section2img3.jpg"
+									alt="Choice between phone and PC screen"
+									width="360"
+									height="300"
+								/>
+							</picture>
 						</li>
 					</ul>
 				</div>
 			</section>
+
 			<section class="section employee">
 				<div class="conteainer employee-conteainer">
 					<h2 class="employee-title">Our Team</h2>
 					<ul class="list employee-list">
 						<li class="employee-div">
-							<img class="employee-img" src="./images/section3img1.jpg" alt="Mark Guerrero" width="264" height="260" />
+							<picture>
+								<source srcset="./images/team-mark.webp 1x, ./images/team-mark@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/team-mark@2x.jpg 2x" type="image/jpeg" />
+								<img class="employee-img" src="./images/team-mark.jpg" alt="Mark Guerrero" width="264" height="260" />
+							</picture>
 							<div class="employee-title-text">
 								<h3 class="title employee-div-title">Mark Guerrero</h3>
 								<p class="text employee-text">Product Designer</p>
@@ -164,7 +248,11 @@
 						</li>
 
 						<li class="employee-div">
-							<img class="employee-img" src="./images/section3img2.jpg" alt="Tom Ford" width="264" height="260" />
+							<picture>
+								<source srcset="./images/team-tom.webp 1x, ./images/team-tom@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/team-tom@2x.jpg 2x" type="image/jpeg" />
+								<img class="employee-img" src="./images/team-tom.jpg" alt="Tom Ford" width="264" height="260" />
+							</picture>
 							<div class="employee-title-text">
 								<h3 class="title employee-div-title">Tom Ford</h3>
 								<p class="text employee-text">Frontend Developer</p>
@@ -202,7 +290,11 @@
 						</li>
 
 						<li class="employee-div">
-							<img class="employee-img" src="./images/section3img3.jpg" alt="Camila Garcia" width="264" height="260" />
+							<picture>
+								<source srcset="./images/team-camila.webp 1x, ./images/team-camila@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/team-camila@2x.jpg 2x" type="image/jpeg" />
+								<img class="employee-img" src="./images/team-camila.jpg" alt="Camila Garcia" width="264" height="260" />
+							</picture>
 							<div class="employee-title-text">
 								<h3 class="title employee-div-title">Camila Garcia</h3>
 								<p class="text employee-text">Marketing</p>
@@ -240,7 +332,11 @@
 						</li>
 
 						<li class="employee-div">
-							<img class="employee-img" src="./images/section3img4.jpg" alt="Daniel Wilson" width="264" height="260" />
+							<picture>
+								<source srcset="./images/team-daniel.webp 1x, ./images/team-daniel@2x.webp 2x" type="image/webp" />
+								<source srcset="./images/team-daniel@2x.jpg 2x" type="image/jpeg" />
+								<img class="employee-img" src="./images/team-daniel.jpg" alt="Daniel Wilson" width="264" height="260" />
+							</picture>
 							<div class="employee-title-text">
 								<h3 class="title employee-div-title">Daniel Wilson</h3>
 								<p class="text employee-text">UI Designer</p>
@@ -344,7 +440,7 @@
 				</div>
 				<div class="div-footer">
 					<p class="title footer-title">Social media</p>
-					<ul class="list employee-link">
+					<ul class="list employee-link footer-employee-link">
 						<li>
 							<a class="link-icon footer-icon" href="https://www.instagram.com/">
 								<svg class="box-icon" width="24" height="24">
@@ -446,6 +542,7 @@
 			</div>
 		</div>
 
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
