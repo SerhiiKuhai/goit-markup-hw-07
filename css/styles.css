@@ -85,7 +85,6 @@ button {
 /* --------------------page-header----------------------------------------- */
 /* -------------------heder mobile \/---------------------- */
 .conteainer {
-	/* width: 100%; */
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -97,7 +96,6 @@ button {
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 24px;
-	/* padding-bottom: 24px; */
 }
 
 .mobile-menu-open {
@@ -213,7 +211,6 @@ button {
 	.nav {
 		display: flex;
 		gap: 120px;
-		/* padding: 24px 0; */
 	}
 	.contacts-link {
 		font-weight: 400;
@@ -488,7 +485,10 @@ button {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 }
-
+.features-title {
+	font-size: 36px;
+	line-height: 1.1;
+}
 @media screen and (max-width: 767px) {
 	.features-title {
 		text-align: center;
@@ -516,6 +516,11 @@ button {
 	}
 	.features-list-box {
 		flex-basis: calc((100% - 52px) / 4);
+	}
+	.features-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
 	}
 }
 
@@ -767,6 +772,7 @@ button {
 	color: var(--footer-text-color);
 }
 .footer-input {
+	margin-top: 16px;
 	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -842,11 +848,23 @@ button {
 .footer-employee-link {
 	gap: 16px;
 }
+.footer-label {
+	text-align: center;
+
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--footer-text-color);
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
 .footer-title {
 	margin-bottom: 16px;
 	font-weight: 500;
 	font-size: 16px;
 	color: var(--footer-text-color);
+	line-height: 1.2;
+	letter-spacing: 0.02em;
 }
 .footer-icon {
 	background: rgba(255, 255, 255, 0.1);
@@ -861,15 +879,14 @@ button {
 	height: 40px;
 	padding: 8px 24px;
 	gap: 16px;
-}
-.footer-title-btn {
-	margin: 0;
+
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	color: var(--footer-text-color);
 }
+
 /* -------------------------modal--------------------------------------------- */
 .modal {
 	width: 100%;
@@ -887,10 +904,17 @@ button {
 @media screen and (min-width: 480px) {
 	.modal {
 		width: 408px;
-		height: 576px;
+		height: 586px;
 	}
 }
-
+.application-text-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
+	text-align: center;
+}
 .modal-button {
 	background-color: transparent;
 	border: none;
@@ -939,6 +963,8 @@ button {
 }
 
 .application-input {
+	margin-top: 4px;
+
 	width: 100%;
 	padding: 8px 16px 8px 38px;
 	font-weight: 400;
@@ -984,7 +1010,7 @@ button {
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.04em;
-	margin-bottom: 4px;
+	/* margin-bottom: 4px; */
 	color: #8e8f99;
 }
 .application-label-textarea {
@@ -1027,9 +1053,9 @@ button {
 .checkbox:hover + .checkbox-icon {
 	transform: scale(1.1) rotate(360deg);
 }
-.application-text-policy {
+/* .application-text-policy {
 	margin: 0;
-}
+} */
 .application-span {
 	color: #4d5ae5;
 }
